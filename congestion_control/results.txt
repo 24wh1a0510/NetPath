@@ -1,0 +1,47 @@
+
+python leaky_bucket.py
+
+
+============================================================
+       CONGESTION CONTROL - LEAKY BUCKET
+============================================================
+Enter bucket capacity (packets): 5
+Enter output rate (packets per time unit): 2
+Enter number of time units: 5
+
+Enter packet arrivals for each time unit.
+Example: 5 means 5 packets arrive at that time.
+
+Packets arriving at time 1: 8
+Packets arriving at time 2: 1
+Packets arriving at time 3: 4
+Packets arriving at time 4: 0
+Packets arriving at time 5: 3
+
+=====================================================================================
+Time    Arrivals    Accepted    Dropped     Sent      Queue       Status
+=====================================================================================
+1       8           5           3           2         3           CONGESTION - PACKETS DROPPED
+2       1           1           0           2         2           NORMAL
+3       4           3           1           2         3           CONGESTION - PACKETS DROPPED
+4       0           0           0           2         1           NORMAL
+5       3           3           0           2         2           NORMAL
+
+============================================================
+             CONGESTION RESULTS
+============================================================
+Total packets arrived    : 16
+Total packets transmitted: 10
+Total packets dropped    : 4
+Packets remaining        : 2
+Bucket capacity          : 5
+Output rate              : 2
+Packet drop percentage   : 25.00%
+Network status           : CONGESTION DETECTED
+============================================================
+
+Observation:
+The Leaky Bucket algorithm limits packet transmission
+to a fixed rate. When incoming traffic exceeds the
+available bucket capacity, excess packets are dropped.
+This demonstrates congestion control and traffic shaping.
