@@ -1,0 +1,533 @@
+{
+  "A": [
+    {
+      "dest": "B",
+      "next_hop": "C",
+      "cost": 3.0,
+      "path": [
+        "A",
+        "C",
+        "B"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 4.0,
+      "alt_path": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "dest": "C",
+      "next_hop": "C",
+      "cost": 2.0,
+      "path": [
+        "A",
+        "C"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 5.0,
+      "alt_path": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "dest": "D",
+      "next_hop": "C",
+      "cost": 8.0,
+      "path": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 9.0,
+      "alt_path": [
+        "A",
+        "B",
+        "D"
+      ]
+    },
+    {
+      "dest": "E",
+      "next_hop": "C",
+      "cost": 10.0,
+      "path": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 11.0,
+      "alt_path": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ]
+    },
+    {
+      "dest": "F",
+      "next_hop": "C",
+      "cost": 13.0,
+      "path": [
+        "A",
+        "C",
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 14.0,
+      "alt_path": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "F"
+      ]
+    }
+  ],
+  "B": [
+    {
+      "dest": "A",
+      "next_hop": "C",
+      "cost": 3.0,
+      "path": [
+        "B",
+        "C",
+        "A"
+      ],
+      "alt_next_hop": "A",
+      "alt_cost": 4.0,
+      "alt_path": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "dest": "C",
+      "next_hop": "C",
+      "cost": 1.0,
+      "path": [
+        "B",
+        "C"
+      ],
+      "alt_next_hop": "A",
+      "alt_cost": 6.0,
+      "alt_path": [
+        "B",
+        "A",
+        "C"
+      ]
+    },
+    {
+      "dest": "D",
+      "next_hop": "D",
+      "cost": 5.0,
+      "path": [
+        "B",
+        "D"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 9.0,
+      "alt_path": [
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "dest": "E",
+      "next_hop": "D",
+      "cost": 7.0,
+      "path": [
+        "B",
+        "D",
+        "E"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 11.0,
+      "alt_path": [
+        "B",
+        "C",
+        "E"
+      ]
+    },
+    {
+      "dest": "F",
+      "next_hop": "D",
+      "cost": 10.0,
+      "path": [
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 14.0,
+      "alt_path": [
+        "B",
+        "C",
+        "E",
+        "F"
+      ]
+    }
+  ],
+  "C": [
+    {
+      "dest": "A",
+      "next_hop": "A",
+      "cost": 2.0,
+      "path": [
+        "C",
+        "A"
+      ],
+      "alt_next_hop": "B",
+      "alt_cost": 5.0,
+      "alt_path": [
+        "C",
+        "B",
+        "A"
+      ]
+    },
+    {
+      "dest": "B",
+      "next_hop": "B",
+      "cost": 1.0,
+      "path": [
+        "C",
+        "B"
+      ],
+      "alt_next_hop": "A",
+      "alt_cost": 6.0,
+      "alt_path": [
+        "C",
+        "A",
+        "B"
+      ]
+    },
+    {
+      "dest": "D",
+      "next_hop": "B",
+      "cost": 6.0,
+      "path": [
+        "C",
+        "B",
+        "D"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 8.0,
+      "alt_path": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "dest": "E",
+      "next_hop": "B",
+      "cost": 8.0,
+      "path": [
+        "C",
+        "B",
+        "D",
+        "E"
+      ],
+      "alt_next_hop": "E",
+      "alt_cost": 10.0,
+      "alt_path": [
+        "C",
+        "E"
+      ]
+    },
+    {
+      "dest": "F",
+      "next_hop": "B",
+      "cost": 11.0,
+      "path": [
+        "C",
+        "B",
+        "D",
+        "E",
+        "F"
+      ],
+      "alt_next_hop": "E",
+      "alt_cost": 13.0,
+      "alt_path": [
+        "C",
+        "E",
+        "F"
+      ]
+    }
+  ],
+  "D": [
+    {
+      "dest": "A",
+      "next_hop": "B",
+      "cost": 8.0,
+      "path": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 10.0,
+      "alt_path": [
+        "D",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "dest": "B",
+      "next_hop": "B",
+      "cost": 5.0,
+      "path": [
+        "D",
+        "B"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 9.0,
+      "alt_path": [
+        "D",
+        "C",
+        "B"
+      ]
+    },
+    {
+      "dest": "C",
+      "next_hop": "B",
+      "cost": 6.0,
+      "path": [
+        "D",
+        "B",
+        "C"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 8.0,
+      "alt_path": [
+        "D",
+        "C"
+      ]
+    },
+    {
+      "dest": "E",
+      "next_hop": "E",
+      "cost": 2.0,
+      "path": [
+        "D",
+        "E"
+      ],
+      "alt_next_hop": "F",
+      "alt_cost": 9.0,
+      "alt_path": [
+        "D",
+        "F",
+        "E"
+      ]
+    },
+    {
+      "dest": "F",
+      "next_hop": "E",
+      "cost": 5.0,
+      "path": [
+        "D",
+        "E",
+        "F"
+      ],
+      "alt_next_hop": "F",
+      "alt_cost": 6.0,
+      "alt_path": [
+        "D",
+        "F"
+      ]
+    }
+  ],
+  "E": [
+    {
+      "dest": "A",
+      "next_hop": "D",
+      "cost": 10.0,
+      "path": [
+        "E",
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 12.0,
+      "alt_path": [
+        "E",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "dest": "B",
+      "next_hop": "D",
+      "cost": 7.0,
+      "path": [
+        "E",
+        "D",
+        "B"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 11.0,
+      "alt_path": [
+        "E",
+        "C",
+        "B"
+      ]
+    },
+    {
+      "dest": "C",
+      "next_hop": "D",
+      "cost": 8.0,
+      "path": [
+        "E",
+        "D",
+        "B",
+        "C"
+      ],
+      "alt_next_hop": "C",
+      "alt_cost": 10.0,
+      "alt_path": [
+        "E",
+        "C"
+      ]
+    },
+    {
+      "dest": "D",
+      "next_hop": "D",
+      "cost": 2.0,
+      "path": [
+        "E",
+        "D"
+      ],
+      "alt_next_hop": "F",
+      "alt_cost": 9.0,
+      "alt_path": [
+        "E",
+        "F",
+        "D"
+      ]
+    },
+    {
+      "dest": "F",
+      "next_hop": "F",
+      "cost": 3.0,
+      "path": [
+        "E",
+        "F"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 8.0,
+      "alt_path": [
+        "E",
+        "D",
+        "F"
+      ]
+    }
+  ],
+  "F": [
+    {
+      "dest": "A",
+      "next_hop": "E",
+      "cost": 13.0,
+      "path": [
+        "F",
+        "E",
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 14.0,
+      "alt_path": [
+        "F",
+        "D",
+        "B",
+        "C",
+        "A"
+      ]
+    },
+    {
+      "dest": "B",
+      "next_hop": "E",
+      "cost": 10.0,
+      "path": [
+        "F",
+        "E",
+        "D",
+        "B"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 11.0,
+      "alt_path": [
+        "F",
+        "D",
+        "B"
+      ]
+    },
+    {
+      "dest": "C",
+      "next_hop": "E",
+      "cost": 11.0,
+      "path": [
+        "F",
+        "E",
+        "D",
+        "B",
+        "C"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 12.0,
+      "alt_path": [
+        "F",
+        "D",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "dest": "D",
+      "next_hop": "E",
+      "cost": 5.0,
+      "path": [
+        "F",
+        "E",
+        "D"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 6.0,
+      "alt_path": [
+        "F",
+        "D"
+      ]
+    },
+    {
+      "dest": "E",
+      "next_hop": "E",
+      "cost": 3.0,
+      "path": [
+        "F",
+        "E"
+      ],
+      "alt_next_hop": "D",
+      "alt_cost": 8.0,
+      "alt_path": [
+        "F",
+        "D",
+        "E"
+      ]
+    }
+  ]
+}

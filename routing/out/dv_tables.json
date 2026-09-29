@@ -1,0 +1,158 @@
+{
+  "A": {
+    "A": {
+      "cost": 0,
+      "next_hop": "A"
+    },
+    "B": {
+      "cost": 3.0,
+      "next_hop": "C"
+    },
+    "C": {
+      "cost": 2.0,
+      "next_hop": "C"
+    },
+    "D": {
+      "cost": 8.0,
+      "next_hop": "C"
+    },
+    "E": {
+      "cost": 10.0,
+      "next_hop": "C"
+    },
+    "F": {
+      "cost": 13.0,
+      "next_hop": "C"
+    }
+  },
+  "B": {
+    "A": {
+      "cost": 3.0,
+      "next_hop": "C"
+    },
+    "B": {
+      "cost": 0,
+      "next_hop": "B"
+    },
+    "C": {
+      "cost": 1.0,
+      "next_hop": "C"
+    },
+    "D": {
+      "cost": 5.0,
+      "next_hop": "D"
+    },
+    "E": {
+      "cost": 7.0,
+      "next_hop": "D"
+    },
+    "F": {
+      "cost": 10.0,
+      "next_hop": "D"
+    }
+  },
+  "C": {
+    "A": {
+      "cost": 2.0,
+      "next_hop": "A"
+    },
+    "B": {
+      "cost": 1.0,
+      "next_hop": "B"
+    },
+    "C": {
+      "cost": 0,
+      "next_hop": "C"
+    },
+    "D": {
+      "cost": 6.0,
+      "next_hop": "B"
+    },
+    "E": {
+      "cost": 8.0,
+      "next_hop": "B"
+    },
+    "F": {
+      "cost": 11.0,
+      "next_hop": "B"
+    }
+  },
+  "D": {
+    "A": {
+      "cost": 8.0,
+      "next_hop": "B"
+    },
+    "B": {
+      "cost": 5.0,
+      "next_hop": "B"
+    },
+    "C": {
+      "cost": 6.0,
+      "next_hop": "B"
+    },
+    "D": {
+      "cost": 0,
+      "next_hop": "D"
+    },
+    "E": {
+      "cost": 2.0,
+      "next_hop": "E"
+    },
+    "F": {
+      "cost": 5.0,
+      "next_hop": "E"
+    }
+  },
+  "E": {
+    "A": {
+      "cost": 10.0,
+      "next_hop": "D"
+    },
+    "B": {
+      "cost": 7.0,
+      "next_hop": "D"
+    },
+    "C": {
+      "cost": 8.0,
+      "next_hop": "D"
+    },
+    "D": {
+      "cost": 2.0,
+      "next_hop": "D"
+    },
+    "E": {
+      "cost": 0,
+      "next_hop": "E"
+    },
+    "F": {
+      "cost": 3.0,
+      "next_hop": "F"
+    }
+  },
+  "F": {
+    "A": {
+      "cost": 13.0,
+      "next_hop": "E"
+    },
+    "B": {
+      "cost": 10.0,
+      "next_hop": "E"
+    },
+    "C": {
+      "cost": 11.0,
+      "next_hop": "E"
+    },
+    "D": {
+      "cost": 5.0,
+      "next_hop": "E"
+    },
+    "E": {
+      "cost": 3.0,
+      "next_hop": "E"
+    },
+    "F": {
+      "cost": 0,
+      "next_hop": "F"
+    }
+  }
+}
