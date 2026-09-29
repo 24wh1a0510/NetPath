@@ -22,8 +22,7 @@ link fails.
 - Reads network topology from JSON or a plain edge-list text file
 - Simulates link failures and recomputes routes around them
 - Exports routing tables to JSON and CSV
-- Connects to the Congestion Control module via `update_cost()`, so
-  congested links get rerouted around (see `bridge.py`)
+
 
 ## Requirements
 - Python 3.x (standard library only, no installs needed)
